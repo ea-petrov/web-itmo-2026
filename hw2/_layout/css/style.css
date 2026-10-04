@@ -3,6 +3,8 @@
     --border-radius: 6px;
     --black-color: #333;
     --caption-color: #3B5998;
+    --table-border-color: rgb(220, 220, 220);
+    --second-plan-color: rgb(150, 147, 147);
     color: var(--black-color);
     font-family: Verdana, sans-serif;
     font-size: 16px;
@@ -77,7 +79,7 @@ header nav .search {
 
 header nav .search input{
     border: 1px solid #d4d4d4;
-    color: black;
+    color: var(--black-color);
     font-size: 0.8rem;
     height: 16px;
     width: 9em;
@@ -101,7 +103,7 @@ header nav .search input:focus{
     font-size: 1.05rem;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
-    background-color: rgb(220, 220, 220);
+    background-color: var(--table-border-color);
 }
 
 .datatable table{
@@ -116,7 +118,7 @@ header nav .search input:focus{
 
 .datatable table th, td {
     font-size: 0.85rem;
-    border: 1px solid rgb(220, 220, 220);
+    border: 1px solid var(--table-border-color);
     padding: 0.34rem;
 }
 
@@ -127,12 +129,12 @@ header nav .search input:focus{
 article .title{
     font-size: 1.35rem;
     font-weight: bold;
-    color: #3B5998;
+    color: var(--caption-color);
 }
 
 article .information {
     font-size: 0.9rem;
-    color: rgb(150, 147, 147);
+    color: var(--second-plan-color);
     margin-top: 0.2rem;
 }
 
@@ -140,8 +142,8 @@ article .body{
     border-left: 5px solid var(--border-color);
     padding-left: 0.7rem;
     margin-top: 0.8rem;
-    font-family: "Arial Narrow", sans-serif;
-    font-size: 1.23rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
 }
 
 article .attachment{
@@ -151,7 +153,7 @@ article .attachment{
 }
 
 article .attachment li{
-    color: rgb(150, 147, 147);
+    color: var(--second-plan-color);
     padding-left: 1rem;
     background-image: url(../img/paperclip-16x16.png);
     background-repeat: no-repeat;
